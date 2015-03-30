@@ -1,5 +1,5 @@
 # coding: utf-8
-if ENV['USE_OFFICIAL_GEM_SOURCE']
+if true || ENV['USE_OFFICIAL_GEM_SOURCE']
   source 'https://rubygems.org'
 else
   source 'https://ruby.taobao.org'
@@ -26,7 +26,8 @@ gem 'ruby-prof'
 
 # 上传组件
 gem 'carrierwave', '~> 0.10.0'
-gem 'carrierwave-upyun', '0.1.8'
+gem 'carrierwave-mongoid' #, '0.1.2', :require => 'carrierwave/mongoid'
+#gem 'carrierwave-upyun', '0.1.8'
 gem 'mini_magick','3.7.0', require: false
 
 # Mongoid 辅助插件
