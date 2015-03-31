@@ -6,11 +6,7 @@
 # SiteConfig.index_html
 SiteConfig.save_default("index_html",<<-eos
 <div class="box" style="text-align:center;">
-  <p><img alt="Big_logo" src="/assets/big_logo.png"></p>
-  <p></p>
-  <p>Ruby China Group， 致力于构建完善的 Ruby 中文社区。</p>
-  <p>功能正在完善中，欢迎 <a href="http://github.com/huacnlee/ruby-china">贡献代码</a> 。</p>
-  <p>诚邀有激情的活跃 Ruby 爱好者参与维护社区，联系 <b style="color:#c00;">lgn21st@gmail.com</b></p>
+这里是playground，我们一起玩吧！
 </div>
 eos
 )
@@ -18,7 +14,7 @@ eos
 # Wiki 首页 HTML
 SiteConfig.save_default("wiki_index_html",<<-eos
 <div class="box">
-  Wiki Home page.
+  维基小百科。
 </div>
 eos
 )
@@ -26,7 +22,7 @@ eos
 # Footer HTML
 SiteConfig.save_default("footer_html",<<-eos
 <p class="copyright">
- &copy; Ruby China Group.
+ &copy; zhouxuhui.com
 </p>
 eos
 )
@@ -105,38 +101,27 @@ SiteConfig.save_default("twitter_page_html",%(
 
 # ========================= init Section, Node =========================
 
-# s1 = Section.create(:name => "Ruby")
-# Node.create(:name => "Ruby",:summary => "...", :section_id => s1.id)
-# Node.create(:name => "Ruby on Rails",:summary => "...", :section_id => s1.id)
-# Node.create(:name => "Gem",:summary => "...", :section_id => s1.id)
-# s2 = Section.create(:name => "Web Development")
-# Node.create(:name => "Python",:summary => "...", :section_id => s2.id)
-# Node.create(:name => "Javascript",:summary => "...", :section_id => s2.id)
-# Node.create(:name => "CoffeeScript",:summary => "...", :section_id => s2.id)
-# Node.create(:name => "HAML",:summary => "...", :section_id => s2.id)
-# Node.create(:name => "SASS",:summary => "...", :section_id => s2.id)
-# Node.create(:name => "MongoDB",:summary => "...", :section_id => s2.id)
-# Node.create(:name => "Redis",:summary => "...", :section_id => s2.id)
-# Node.create(:name => "Git",:summary => "...", :section_id => s2.id)
-# Node.create(:name => "MySQL",:summary => "...", :section_id => s2.id)
-# Node.create(:name => "Hadoop",:summary => "...", :section_id => s2.id)
-# Node.create(:name => "Google",:summary => "...", :section_id => s2.id)
-# Node.create(:name => "Java",:summary => "...", :section_id => s2.id)
-# Node.create(:name => "Tornado",:summary => "...", :section_id => s2.id)
-# Node.create(:name => "Linux",:summary => "...", :section_id => s2.id)
-# Node.create(:name => "Nginx",:summary => "...", :section_id => s2.id)
-# Node.create(:name => "Apache",:summary => "...", :section_id => s2.id)
-# Node.create(:name => "Cloud",:summary => "...", :section_id => s2.id)
-# s6 = Section.create(:name => "Ruby China")
-# Node.create(:name => "公告",:summary => "...", :section_id => s6.id)
-# Node.create(:name => "反馈",:summary => "...", :section_id => s6.id)
-# Node.create(:name => "开发",:summary => "...", :section_id => s6.id)
+s1 = Section.create(:name => "粑粑麻麻")
+Node.create(:name => "所有关于宝宝的",:summary => "...", :section_id => s1.id)
+s2 = Section.create(:name => "酷玩DIY")
+Node.create(:name => "硬件",:summary => "...", :section_id => s2.id)
+Node.create(:name => "软件",:summary => "...", :section_id => s2.id)
+s3 = Section.create(:name => "摄影")
+Node.create(:name => "手机拍照",:summary => "...", :section_id => s3.id)
+Node.create(:name => "单反/定焦镜头",:summary => "...", :section_id => s3.id)
+Node.create(:name => "单反/变焦镜头",:summary => "...", :section_id => s3.id)
+s4 = Section.create(:name => "烘焙")
+Node.create(:name => "面包",:summary => "...", :section_id => s4.id)
+Node.create(:name => "蛋糕",:summary => "...", :section_id => s4.id)
+s6 = Section.create(:name => "PLAYGROUND")
+Node.create(:name => "公告",:summary => "...", :section_id => s6.id)
+Node.create(:name => "反馈",:summary => "...", :section_id => s6.id)
 
-# SiteNode.create(:name => "国内商业网站", :sort => 100)
-# SiteNode.create(:name => "国外著名网站", :sort => 99)
-# SiteNode.create(:name => "Ruby 社区网站", :sort => 98)
-# SiteNode.create(:name => "技术博客", :sort => 97)
-# SiteNode.create(:name => "Ruby 开源项目", :sort => 96)
-# SiteNode.create(:name => "国内企业", :sort => 95)
-# SiteNode.create(:name => "其他", :sort => 94)
+SiteNode.create(:name => "国内商业网站", :sort => 100)
+SiteNode.create(:name => "国外著名网站", :sort => 99)
+SiteNode.create(:name => "Ruby 社区网站", :sort => 98)
+SiteNode.create(:name => "技术博客", :sort => 97)
+SiteNode.create(:name => "Ruby 开源项目", :sort => 96)
+SiteNode.create(:name => "国内企业", :sort => 95)
+SiteNode.create(:name => "其他", :sort => 94)
 

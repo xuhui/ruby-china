@@ -42,15 +42,14 @@
     <div class="navbar-inner">
       <div class="container">
         <h3>
-          <a href="/" class="site-logo"></a>
+          <%= link_to(t("menu.playground"), "/") %>
         </h3>
         <%= render_list class: "nav" do |li|
            li << link_to(t("menu.home"), root_path)
            li << link_to(t("menu.topics"), topics_path)
            li << link_to(t("menu.wiki"), pages_path) if !mobile?
-           li << link_to(t("menu.jobs"), jobs_path)
-           li << link_to(t("menu.tweets"), twitter_path) if !mobile?
-           li << link_to(t("menu.sites"), sites_path) if !mobile?
+           li << link_to(t("menu.blog"), "http://blog.zhouxuhui.com") if !mobile?
+           li << link_to(t("menu.colababy"), "http://www.kanzhaopian.com") if !mobile?
         end %>
         <span class="pull-right">
           <form action="/search" class="navbar-search" method="get">

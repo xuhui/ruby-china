@@ -1,5 +1,5 @@
 <%= raw SiteConfig.index_html %>
-
+ 
 <div class="home_suggest_topics box box-gray">
   <h2>社区精华帖</h2>
   <div class="topics">
@@ -13,5 +13,7 @@
 </div>
 <% if !mobile? %>
   <%= render "/shared/index_sections" %>
-  <%= render "/shared/hot_locations" %>
+  <% if false %>
+    <%= render "/shared/hot_locations" %>
+  <% end %>
 <% end %>
